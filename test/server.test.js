@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 
@@ -44,7 +46,7 @@ describe('POST /writeFile', () => {
   it('should write the file', (done) => {
     chai.request(app)
       .post('/writeFile')
-      .attach('data', './assets/writeData.txt')
+      .attach('data',fs.readFileSync('./assets/writeData.txt'),'./assets/writeData.txt')
       .end((err, res) => {
         res.should.have.status(200);
         res.text.should.equal("File Successfully Saved");
