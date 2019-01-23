@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 var URL = require('url-parse');
 var fs = require('fs');
 
-// const pagesToVisit = "https://www.wiprodigital.com";
+// const pagesToVisit = URL here;
 
 var baseUrl;
 

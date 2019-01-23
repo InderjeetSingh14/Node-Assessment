@@ -12,7 +12,7 @@ result will be saved as writeFile.txt
 
 #NonRepeatingCharacter http://localhost:3001/firstNonRepeatingCharacter/:name
 
-#Web Crawler : http://localhost:3001/webCrawler
+#Web Crawler : http://localhost:3001/webCrawler , query param url = <url here>
 
 result will be saved as webCrawlerOutput.txt
 

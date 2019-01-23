@@ -44,7 +44,7 @@ describe('POST /writeFile', () => {
   it('should write the file', (done) => {
     chai.request(app)
       .post('/writeFile')
-      .attach('file', './assets/writeData.txt')
+      .attach('data', './assets/writeData.txt')
       .end((err, res) => {
         res.should.have.status(200);
         res.text.should.equal("File Successfully Saved");
